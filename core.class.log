@@ -1,0 +1,60 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0BEB626563B3F71042A',
+    participant: undefined
+  },
+  messageTimestamp: 1691087368,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5492995164700'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EE773E65510BF66443',
+    participant: undefined
+  },
+  messageTimestamp: 1691087373,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '5492995164700'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0F51D6AFAC3BA65D9E6',
+    participant: undefined
+  },
+  messageTimestamp: 1691087577,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: 'tengo que enviar un producto a urquiza 345 en comodoro rivadavia y pesa menos de 20kg, que envio corresponde?',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'tengo que enviar un producto a urquiza 345 en comodoro rivadavia y pesa menos de 20kg, que envio corresponde?',
+  from: '5492995164700'
+}

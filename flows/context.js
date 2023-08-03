@@ -34,10 +34,14 @@ module.exports = {
           await refProvider.sendPresenceUpdate('composing', jid);
   
           const data = await getPrompt();
-
-          const textIA = await chatgptClass.handleMsgChatGPT(data); // ¡Diciéndole actúa!
-          await flowDynamic(textIA.text);
-          
+  
+          await chatgptClass.handleMsgChatGPT(data); // ¡Diciéndole actúa!
+  
+          await flowDynamic("Las formas de entrega disponibles son:\n" +
+            "1. Retiro únicamente por nuestra sucursal en Neuquén.\n" +
+            "2. Envío sin cargo: Ofrecemos envío gratuito para compras a partir de $10,000 en un radio de hasta 20 km. El plazo de entrega es de 72 horas.\n" +
+            "3. Envío a larga distancia (hasta 20 km y más de 20 kg): Si tu compra supera los 20 km en distancia o pesa más de 20 kg, ofrecemos opciones de envío a larga distancia. Los costos y detalles específicos se proporcionarán al momento de la compra.\n" +
+            "4. Envío a larga distancia y peso (más de 20 kg): ViaCargo y Cruz del sur.");
         })
         .addAnswer(
           `Tienes otra pregunta o duda?`,

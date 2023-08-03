@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+
+//prompt son las instrucciones y completion es la seccion de posibles dialogos o interacciones entre el cliente y el bot
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}
+{"prompt": "<prompt text>", "completion": "<ideal generated text>"}

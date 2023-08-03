@@ -2,7 +2,7 @@ require('dotenv').config();
 
 class ChatGPTClass {
   queue = []; 
-  optionsGPT = { model: "gpt-3.5-turbo-0301" };
+  optionsGPT = { model: "gpt-3.5-turbo" };
   openai = undefined;
 
   constructor() {
@@ -37,6 +37,7 @@ class ChatGPTClass {
     });
 
     this.queue.push(interaccionChatGPT);
+    console.log("interaccionChatGPT", interaccionChatGPT);
     return interaccionChatGPT
   };
 }

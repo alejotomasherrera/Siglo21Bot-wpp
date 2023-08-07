@@ -36,7 +36,6 @@ module.exports = {
 
         await refProvider.sendPresenceUpdate('composing', jid)
 
-
         const user = await getUser(ctx.from);//Consultamos a strapi! ctx.from = numero
 
         const lastTicket = await getTicket(user[0].id);
@@ -56,7 +55,6 @@ module.exports = {
         const data = await getPrompt();
 
         await chatgptClass.handleMsgChatGPT(data);//Dicinedole actua!!
-
 
         const textFromAI = await chatgptClass.handleMsgChatGPT(
           `cliente=${user[0].username}, lista_de_reparaciones="${listTickets}"`

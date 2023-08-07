@@ -9,7 +9,7 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
  */
 const getPrompt = async () => {
   const pathPromp = join(process.cwd(), "promps");
-  const text = readFileSync(join(pathPromp, "03_FORMASDEENTREGA.txt"), "utf-8");
+  const text = readFileSync(join(pathPromp, "06_CONTACTOYUBICACION.txt"), "utf-8");
   return text;
 };
 
@@ -21,45 +21,12 @@ const getPrompt = async () => {
 
 module.exports = {
   flowContactoUbicacion: (chatgptClass) => {
-    return addKeyword("7", {
+    return addKeyword("5", {
       sensitive: true,
     })
-      .addAction(async (ctx, { flowDynamic, provider }) => {
-        await flowDynamic("Consultando información de contacto y ubicación...");
-
-        const jid = ctx.key.remoteJid;
-        const refProvider = await provider.getInstance();
-
-        await refProvider.presenceSubscribe(jid);
-        await delay(500);
-
-        await refProvider.sendPresenceUpdate("composing", jid);
-
-        const data = await getPrompt("07_CONTACTOUBICACION.txt");
-
-        await chatgptClass.handleMsgChatGPT(data); // ¡Diciéndole actúa!
-
-        await flowDynamic(
-          "Estamos aquí para ayudarte. Contáctanos:\n" +
-            "Ventas Web / Marketing\n" +
-            "- Tel: +54 9 299 422 9156\n" +
-            "- Email: ventasonline@siglo21myh.com.ar\n\n" +
-            "Cotizaciones / Presupuestos\n" +
-            "- Tel: +54 9 299 594-7950\n" +
-            "- Email: cotizaciones@siglo21myh.com.ar\n\n" +
-            "Repuestos\n" +
-            "- Neuquén:\n" +
-            "  Tel: +54 9 299 405-3248\n\n" +
-            "- Cipolletti:\n" +
-            "  Tel: +54 9 299 622-3938\n\n" +
-            "Alquileres / Garantías\n" +
-            "- Tel: +54 9 299 511-3720\n\n" +
-            "Reparaciones / Servicio Técnico\n" +
-            "- Tel: +54 9 299 577-2751\n"
-        );
-      })
+      .addAnswer("🔧 **Siglo 21 Máquinas y Herramientas** 📍 \n\nPara cualquier consulta, puedes contactarnos en las siguientes áreas: \n\n📡 **Ventas Web / Marketing**: +54 9 299 422 9156 📞 | ventasonline@siglo21myh.com.ar 📧\n\n📑 **Cotizaciones / Presupuestos**: +54 9 299 594-7950 📞 | cotizaciones@siglo21myh.com.ar 📧\n\n🔩 **Repuestos**: +54 9 299 405-3248 / +54 9 299 622-3938 📞\n\n🏬 **Sucursales** \n- Neuquén: [T.Planas 1445](https://www.google.com/maps/@-38.9590795,-68.0799321,16z?entry=ttu) 🌐\n  - Horario: L-V 9:00-19hs, Sáb. 9:00-13hs. \n- Cipolletti: [P. Alvear 60](https://www.google.com/maps/@-38.9453353,-68.0049258,16z?entry=ttu) 🌐\n  - Horario: L-V 9:00-18hs, Sáb. 9:00-13hs. \n\n🔧 **Alquileres / Garantías**: +54 9 299 511-3720 📞\n\n🛠️ **Reparaciones / Servicio Técnico**: +54 9 299 577-2751 📞\n\nEstamos aquí para ayudarte en lo que necesites. 😊")
       .addAnswer(
-        `Necesitas más información o tienes alguna pregunta sobre el contacto y la ubicación?`,
+        `¿Necesitas más información o tienes alguna pregunta sobre el contacto y la ubicación?`,
         { capture: true },
         async (ctx, { fallBack }) => {
           if (!ctx.body.toLowerCase().includes("ofertas")) {
@@ -70,3 +37,5 @@ module.exports = {
       );
   },
 };
+
+

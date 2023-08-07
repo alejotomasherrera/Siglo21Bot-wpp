@@ -2,59 +2,99 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0BEB626563B3F71042A',
+    id: '3EB08FAD79F629FA9219EE',
     participant: undefined
   },
-  messageTimestamp: 1691087368,
+  messageTimestamp: 1691176591,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'hola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
+  body: 'hola',
   from: '5492995164700'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0EE773E65510BF66443',
+    id: '3EB05BE3C0C402E0803143',
     participant: undefined
   },
-  messageTimestamp: 1691087373,
+  messageTimestamp: 1691176600,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: '3',
+    conversation: '4',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '3',
+  body: '4',
   from: '5492995164700'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0F51D6AFAC3BA65D9E6',
+    id: '3EB0107A809BBADF483AE4',
     participant: undefined
   },
-  messageTimestamp: 1691087577,
+  messageTimestamp: 1691176604,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: 'tengo que enviar un producto a urquiza 345 en comodoro rivadavia y pesa menos de 20kg, que envio corresponde?',
+    conversation: '5',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'tengo que enviar un producto a urquiza 345 en comodoro rivadavia y pesa menos de 20kg, que envio corresponde?',
+  body: '5',
+  from: '5492995164700'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0F0D16495F6E9D28031',
+    participant: undefined
+  },
+  messageTimestamp: 1691176616,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: '6',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '6',
+  from: '5492995164700'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0BAC0622B35FD22B1A5',
+    participant: undefined
+  },
+  messageTimestamp: 1691176639,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: 'en que horario esta la sucursal de neuquen?',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'en que horario esta la sucursal de neuquen?',
   from: '5492995164700'
 }

@@ -1,10 +1,6 @@
 const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
-const flowPrincipal = addKeyword([EVENTS.WELCOME])
-  .addAnswer(
-    "¡Hola! 👋 Somos *Siglo 21 Máquinas y Herramientas*🛠️🌱",
-    "Expertos en productos de fuerza, jardinería, construcción y más. Mi nombre es Don Carlos ¿En qué puedo ayudarte? 🛒🚚💳"
-  )
+const flowPrincipal = addKeyword(["volver"])
   .addAnswer([
     "¿Cómo podemos ayudarte?",
     "",

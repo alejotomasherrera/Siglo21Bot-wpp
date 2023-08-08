@@ -22,12 +22,19 @@ const getPrompt = async (fileName) => {
 
 //Mejorar a un for que carge todos los promps
 (async () => {
-  fileName = "05_CONTACTOYUBICACION.txt"
-  let data = await getPrompt(fileName);
+  fileName02 = "02_FORMASDEENTREGA.txt"
+  fileName03 = "03_MEDIOSDEPAGO.txt"
+  fileName05 = "05_CONTACTOYUBICACION.txt"
+
+  let data2 = await getPrompt(fileName02);
+  let data3 = await getPrompt(fileName03);
+  let data5 = await getPrompt(fileName05);
 
   await chatGPT.init();
   
-  chatGPT.handleMsgChatGPT(data);
+  chatGPT.handleMsgChatGPT(data2);
+  chatGPT.handleMsgChatGPT(data3);
+  chatGPT.handleMsgChatGPT(data5);
   console.log("ChatGPT ready and essential prompt are processed!");
 })();
 
@@ -52,7 +59,8 @@ const { flowContactoUbicacion } = require("./flows/flowContactoUbicacion");
 const flowAgente = require("./flows/flowAgente");
 //Flow despedida 8
 const flowDespedida = require("./flows/flowDespedida");
-
+//Flow Vuelta
+const flowVolverPrincipal = require("./flows/flowVolverPrincipal");
 /**
  * Funcion principal
  */
@@ -75,6 +83,7 @@ const main = async () => {
     flowAgente,
     //Flow despedida 7
     flowDespedida,
+    flowVolverPrincipal
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);

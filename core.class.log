@@ -2,14 +2,18 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB08FAD79F629FA9219EE',
+    id: '3EB0709B5A3D2C75F63933',
     participant: undefined
   },
-  messageTimestamp: 1691176591,
+  messageTimestamp: 1691520086,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: 'hola',
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -22,79 +26,47 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB05BE3C0C402E0803143',
+    id: '3EB0F13DF2997836450154',
     participant: undefined
   },
-  messageTimestamp: 1691176600,
+  messageTimestamp: 1691520094,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: '4',
+    extendedTextMessage: ExtendedTextMessage {
+      text: '2',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '4',
+  body: '2',
   from: '5492995164700'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0107A809BBADF483AE4',
+    id: '3EB0C0A0DE14CFD7C8193C',
     participant: undefined
   },
-  messageTimestamp: 1691176604,
+  messageTimestamp: 1691520097,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
-    conversation: '5',
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'volver',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '5',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0F0D16495F6E9D28031',
-    participant: undefined
-  },
-  messageTimestamp: 1691176616,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    conversation: '6',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '6',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0BAC0622B35FD22B1A5',
-    participant: undefined
-  },
-  messageTimestamp: 1691176639,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    conversation: 'en que horario esta la sucursal de neuquen?',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'en que horario esta la sucursal de neuquen?',
+  body: 'volver',
   from: '5492995164700'
 }

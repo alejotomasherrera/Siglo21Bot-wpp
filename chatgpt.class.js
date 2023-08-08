@@ -8,7 +8,7 @@ class ChatGPTClass {
       {
         "role": "asistentechat",
         "text": "eres un asistente de chat llamado don Carlos para la empresa siglo21 que resuelve dudas a clientes de todo argentina",
-      },
+      }
     ],
   };
   openai = undefined;

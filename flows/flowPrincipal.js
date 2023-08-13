@@ -9,7 +9,7 @@ const flowPrincipal = addKeyword([EVENTS.WELCOME])
     "¿Cómo podemos ayudarte?",
     "",
     "1. Ayuda con productos 🛒",
-    "2. Entrega/envío 🚚",
+    "2. Metodos de envio y entrega 🚚",
     "3. Medios de pago 💳",
     "4. Asesoramiento 🤝",
     "5. Contacto y ubicación 📞🗺️",

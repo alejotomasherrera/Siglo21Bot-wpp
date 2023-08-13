@@ -1,24 +1,45 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
-const flowVolverPrincipal = require("./flowVolverPrincipal");
+const { readFileSync } = require("fs");
+const { join } = require("path");
 
 /**
  * Exportamos
  * @param {*} chatgptClass
  * @returns
  */
+
+const getPrompt = async () => {
+  const pathPromp = join(process.cwd(), "promps");
+  const text = readFileSync(join(pathPromp, "02_FORMASDEENTREGA.txt"), "utf-8");
+  return text;
+};
+
 module.exports = {
   flowFormasDeEntrega: (chatgptClass) => {
     return addKeyword("2", {
       sensitive: true,
+      onlyContainsKeyword: true,
     })
       .addAnswer(
-        "🚚 Formas de entrega 📦\n\n1️⃣ Retiro únicamente por sucursal de Neuquén. 🏬\n\n2️⃣ Envío sin cargo a partir de $10.000 hasta 20 km (Plazo de entrega 72 hs) 🚛\n\n3️⃣ Envío que supere los 20 km y hasta 20 kg: lo enviamos por medio del Correo Argentino con cobro en destino 📬\n\n4️⃣ Envío que supere los 20 km y más de 20 kg: lo enviamos por transporte (via cargo - cruz del sur) 🚚"
+        "¡Genial! Aquí te presentamos nuestras formas de entrega disponibles 🚚🌟:\n\n" +
+          "1. **Retiro en Sucursal (Neuquén):** 🏢\n" +
+          "¡Puedes venir a nuestra sucursal en Neuquén y llevarte tu pedido en persona! Nuestro equipo estará encantado de atenderte.\n\n" +
+          "2. **Envío Gratis (dentro de 20 km) - Entrega en 72 hs:** 🎁🚛\n" +
+          "Si tu compra supera los $10.000 y estás dentro de 20 km, ¡el envío es gratis! Te llegará en aproximadamente 72 horas.\n\n" +
+          "3. **Envío por Correo Argentino (más de 20 km y hasta 20 kg) - Pago en Destino:** 📦\n" +
+          "Para pedidos más lejanos o que pesen hasta 20 kg, utilizamos Correo Argentino. El pago se hace al momento de la entrega.\n\n" +
+          "4. **Envío por Transporte (más de 20 km y más de 20 kg):** 🚛📦\n" +
+          "Si tu pedido es más grande, lo enviaremos con servicios de transporte como Via Cargo o Cruz del Sur. ¡La seguridad es nuestra prioridad!\n\n" +
+          "¡Estamos aquí para responder a tus preguntas y ayudarte en lo que necesites! Si deseas volver al menú de venta web, simplemente ingresa 'volver'. 🛠️👷‍♀️"
       )
       .addAnswer(
-        `Necesitas más información o tienes alguna pregunta sobre las formas de entrega? Si deseas volver al menu de venta web ingresa: volver`,
+        "¿Necesitas más información o tienes alguna pregunta sobre las formas de entrega? Si deseas volver al menú de venta web, ingresa: 'volver'",
         { capture: true },
         async (ctx, { fallBack }) => {
           if (!ctx.body.toLowerCase().includes("volver")) {
+            //send prompt to gpt
+            const data = await getPrompt();
+            await chatgptClass.handleMsgChatGPT(data); //Dicinedole actua!!
             const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
             await fallBack(textFromAI.text);
           }

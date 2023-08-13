@@ -13,38 +13,12 @@ const chatGPT = new ChatGPTClass();
 
 // Generar promp al inicio del chat
 
-const getPrompt = async (fileName) => {
-  const pathPromp = join(process.cwd(), "promps");
-  const text = readFileSync(join(pathPromp, fileName), "utf-8");
-  return text;
-};
-
-
-//Mejorar a un for que carge todos los promps
-(async () => {
-  fileName02 = "02_FORMASDEENTREGA.txt"
-  fileName03 = "03_MEDIOSDEPAGO.txt"
-  fileName05 = "05_CONTACTOYUBICACION.txt"
-
-  let data2 = await getPrompt(fileName02);
-  let data3 = await getPrompt(fileName03);
-  let data5 = await getPrompt(fileName05);
-
-  await chatGPT.init();
-  
-  chatGPT.handleMsgChatGPT(data2);
-  chatGPT.handleMsgChatGPT(data3);
-  chatGPT.handleMsgChatGPT(data5);
-  console.log("ChatGPT ready and essential prompt are processed!");
-})();
 
 /**
  * Flows
  */
 
 const flowPrincipal = require("./flows/flowPrincipal");
-const { flowReparacion } = require("./flows/flowReparacion");
-const { flowOfertas } = require("./flows/flowOfertas");
 //Flow formasdeentrega 2
 const { flowFormasDeEntrega } = require("./flows/flowFormasdeEntrega");
 //Flow mediosdepago 3
@@ -69,8 +43,6 @@ const main = async () => {
 
   const adapterFlow = createFlow([
     flowPrincipal,
-    //FlowReparacion X
-    flowReparacion(chatGPT),
     //Flow productos 1
     //Formas de entrega/envio 2
     flowFormasDeEntrega(chatGPT),

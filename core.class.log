@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0CC356247A4E1861DBA',
+    id: '3EB0311481F222A8D23B25',
     participant: undefined
   },
-  messageTimestamp: 1691958639,
+  messageTimestamp: 1692023335,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -26,10 +26,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0F903BF66D1ACD1A2B3',
+    id: '3EB0AFB18DD1D4EEEF2D75',
     participant: undefined
   },
-  messageTimestamp: 1691958641,
+  messageTimestamp: 1692023344,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -50,15 +50,15 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0CB59B30B81D8B59852',
+    id: '3EB00526FC381F57B3A56C',
     participant: undefined
   },
-  messageTimestamp: 1691958643,
+  messageTimestamp: 1692023353,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: '3',
+      text: 'regular',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -67,6 +67,6 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: '3',
+  body: 'regular',
   from: '5492995164700'
 }

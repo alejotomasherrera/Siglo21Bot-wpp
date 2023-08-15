@@ -3,8 +3,7 @@ const { createBot, createProvider, createFlow } = require("@bot-whatsapp/bot");
 const QRPortalWeb = require("@bot-whatsapp/portal");
 const BaileysProvider = require("@bot-whatsapp/provider/baileys");
 const MockAdapter = require("@bot-whatsapp/database/mock");
-const { readFileSync } = require("fs");
-const { join } = require("path");
+
 /**
  * ChatGPT
  */
@@ -18,23 +17,29 @@ const chatGPT = new ChatGPTClass();
  * Flows
  */
 
-const flowPrincipal = require("./flows/flowPrincipal");
-//Flow formasdeentrega 2
-const { flowFormasDeEntrega } = require("./flows/flowFormasdeEntrega");
-//Flow mediosdepago 3
-const { flowMediosDePago } = require("./flows/flowMediosDePago");
-//Flow asesoramientoencompra 4
+const principal = require("./flows/principal");
+const volverPrincipal = require("./flows/volverPrincipal");
+const despedida = require("./flows/despedida")
+const agenteVentaWeb = require("./flows/ventaWeb/agenteVentaWeb");
+const { productos } = require("./flows/ventaWeb/productos");
+const { contactoUbicacion } = require("./flows/ventaWeb/contactoUbicacion");
+const { formasdeEntrega } = require("./flows/ventaWeb/formasdeEntrega");
+const { mediosDePago } = require("./flows/ventaWeb/mediosDePago");
+const principalVentaWeb = require("./flows/ventaWeb/principalVentaWeb");
 
-//Flow informaciondecontactoyubicacion 5
-const { flowContactoUbicacion } = require("./flows/flowContactoUbicacion");
-//Flow promocionesydescuentos 6
+//servicioTecnico
+const principalServicioTecnico = require("./flows/servicioTecnico/principalServicioTecnico");
+const { informacionServicioTecnico } = require("./flows/servicioTecnico/informacionServicioTecnico");
+const { reparacion } = require("./flows/servicioTecnico/contactoServicioTecnico");
+const agenteServicioTecnico = require("./flows/servicioTecnico/agenteServicioTecnico");
+const { garantia } = require("./flows/servicioTecnico/garantia");
 
-//Flow agente 7
-const flowAgente = require("./flows/flowAgente");
-//Flow despedida 8
-const flowDespedida = require("./flows/flowDespedida");
-//Flow Vuelta
-const flowVolverPrincipal = require("./flows/flowVolverPrincipal");
+//Contable
+const agenteContable = require("./flows/contable/agenteContable");
+const { estadoCuenta } = require("./flows/contable/estadoCuenta");
+const solicitudCuentaCorriente = require("./flows/contable/solicitudCuentaCorriente");
+const principalContable = require("./flows/contable/principalContable");
+
 /**
  * Funcion principal
  */
@@ -42,20 +47,29 @@ const main = async () => {
   const adapterDB = new MockAdapter();
 
   const adapterFlow = createFlow([
-    flowPrincipal,
-    //Flow productos 1
-    //Formas de entrega/envio 2
-    flowFormasDeEntrega(chatGPT),
-    //Medios de pago 3
-    flowMediosDePago(chatGPT),
-    //Asesoramiento en compra 4
-    //Informacion de contacto y ubicacion 5
-    flowContactoUbicacion(chatGPT),
-    // Flow agente 6
-    flowAgente,
-    //Flow despedida 7
-    flowDespedida,
-    flowVolverPrincipal
+    principal,
+    volverPrincipal,
+    despedida,
+    //Venta Web
+    agenteVentaWeb,
+    productos(chatGPT),
+    contactoUbicacion(chatGPT),
+    formasdeEntrega(chatGPT),
+    mediosDePago(chatGPT),
+    principalVentaWeb,
+    //ServicioTecnico
+    principalServicioTecnico,
+    informacionServicioTecnico(chatGPT),
+    reparacion(chatGPT),
+    agenteServicioTecnico,
+    garantia(chatGPT),
+    //Contable
+    agenteContable,
+    estadoCuenta(chatGPT),
+    solicitudCuentaCorriente,
+    principalContable,
+    //Garantias
+    
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);

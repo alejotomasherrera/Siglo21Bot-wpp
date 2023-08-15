@@ -16,9 +16,8 @@ const getPrompt = async () => {
 
 module.exports = {
   flowFormasDeEntrega: (chatgptClass) => {
-    return addKeyword("2", {
-      sensitive: true,
-      onlyContainsKeyword: true,
+    return addKeyword("envios", {
+      onlyContainsKeyword: true
     })
       .addAnswer(
         "¡Genial! Aquí te presentamos nuestras formas de entrega disponibles 🚚🌟:\n\n" +
@@ -29,8 +28,7 @@ module.exports = {
           "3. **Envío por Correo Argentino (más de 20 km y hasta 20 kg) - Pago en Destino:** 📦\n" +
           "Para pedidos más lejanos o que pesen hasta 20 kg, utilizamos Correo Argentino. El pago se hace al momento de la entrega.\n\n" +
           "4. **Envío por Transporte (más de 20 km y más de 20 kg):** 🚛📦\n" +
-          "Si tu pedido es más grande, lo enviaremos con servicios de transporte como Via Cargo o Cruz del Sur. ¡La seguridad es nuestra prioridad!\n\n" +
-          "¡Estamos aquí para responder a tus preguntas y ayudarte en lo que necesites! Si deseas volver al menú de venta web, simplemente ingresa 'volver'. 🛠️👷‍♀️"
+          "Si tu pedido es más grande, lo enviaremos con servicios de transporte como Via Cargo o Cruz del Sur. ¡La seguridad es nuestra prioridad!\n\n"
       )
       .addAnswer(
         "¿Necesitas más información o tienes alguna pregunta sobre las formas de entrega? Si deseas volver al menú de venta web, ingresa: 'volver'",

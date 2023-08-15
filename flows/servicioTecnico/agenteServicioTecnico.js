@@ -1,6 +1,6 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowAgente = addKeyword(["agente","6"]) // Cambiamos "AGENTE" por "AGENTE, 9"
+const flowAgente = addKeyword(["agenteagente tecnico"])
   .addAnswer(
    "Estamos desviando tu conversación a nuestro agente"
   )
@@ -11,7 +11,7 @@ const flowAgente = addKeyword(["agente","6"]) // Cambiamos "AGENTE" por "AGENTE,
     const nanoid = await import('nanoid')
     const ID_GROUP = nanoid.nanoid(5)
     const refProvider = await provider.getInstance()
-    await refProvider.groupCreate(`Siglo 21 Maquinas y Herramientas - ${ID_GROUP}`, [
+    await refProvider.groupCreate(`Siglo - Servicio Tecnico- ${ID_GROUP}`, [
         // Agregar el número del agente
     ])
   })

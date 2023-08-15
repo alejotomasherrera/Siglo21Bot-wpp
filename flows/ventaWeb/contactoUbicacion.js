@@ -9,13 +9,16 @@ const { join } = require("path");
 
 const getPrompt = async () => {
   const pathPromp = join(process.cwd(), "promps");
-  const text = readFileSync(join(pathPromp, "05_CONTACTOYUBICACION.txt"), "utf-8");
+  const text = readFileSync(
+    join(pathPromp, "05_CONTACTOYUBICACION.txt"),
+    "utf-8"
+  );
   return text;
 };
 
 module.exports = {
   flowContactoUbicacion: (chatgptClass) => {
-    return addKeyword("5", {
+    return addKeyword("contacto", {
       sensitive: true,
       onlyContainsKeyword: true,
     })

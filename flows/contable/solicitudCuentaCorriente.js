@@ -17,7 +17,7 @@ const getPrompt = async () => {
 };
 
 module.exports = {
-    informacionServicioTecnico: (chatgptClass) => {
+  solicitudCuentaCorriente: (chatgptClass) => {
       return addKeyword("solicitar cuenta", {
         sensitive: true,
         onlyContainsKeyword: true,
@@ -29,7 +29,7 @@ module.exports = {
           `¿Necesitas más información o tienes alguna pregunta sobre los requisitos de cuenta corriente? Si deseas volver al menú tecnico ingresa: cuentas`,
           { capture: true },
           async (ctx, { fallBack }) => {
-            if (!ctx.body.toLowerCase().includes("cuentas")) {
+            if (!ctx.body.toLowerCase().includes("cuentas","volver")) {
               const data = await getPrompt();
               await chatgptClass.handleMsgChatGPT(data);
               const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);

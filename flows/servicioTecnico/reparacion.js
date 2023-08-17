@@ -1,79 +1,68 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
-const { getUser, getTicket } = require("../../users.service");
+const { getReparacion } = require("../../api/reparacion.service");
 const { readFileSync } = require("fs");
 const { join } = require("path");
-const delay = (ms) => new Promise((res =>  setTimeout(res, ms)))
-
-/**
- * Recuperamos el prompt "TECNICO"
- */
-const getPrompt = async () => {
-  const pathPromp = join(process.cwd(), "promps");
-  const text = readFileSync(join(pathPromp, "01_TECNICO.txt"), "utf-8");
-  return text;
-};
+const { delay } = require("@adiwajshing/baileys");
+const prinicipalServicioTecnico = require("./principalServicioTecnico");
 
 /**
  * Exportamos
  * @param {*} chatgptClass
  * @returns
  */
+
 module.exports = {
   reparacion: (chatgptClass) => {
     return addKeyword("estado reparacion", {
       sensitive: true,
-    })
-      .addAction(async (ctx, { endFlow, flowDynamic, provider }) => {
-        await flowDynamic("Consultando en la base de datos...");
-
-        const jid = ctx.key.remoteJid
-        const refProvider = await provider.getInstance()
-
-        await refProvider.presenceSubscribe(jid)
-        await delay(500)
-
-        await refProvider.sendPresenceUpdate('composing', jid)
-
-
-        const user = await getUser(ctx.from);//Consultamos a strapi! ctx.from = numero
-
-        const lastTicket = await getTicket(user[0].id);
-
-        if (!lastTicket.data.length) {
-          await flowDynamic("No tienes ticket abierto!");
-          return endFlow();
+    }).addAnswer(
+      "Ingrese el número de reparación que desea consultar(Si desea salir ingrese 'servicio tecnico'): ",
+      { capture: true },
+      async (ctx, { endFlow, flowDynamic, fallBack }) => {
+        idRef = ctx.body;
+        
+        if (idRef.toLowerCase() === "servicio tecnico") {
+          await flowDynamic(prinicipalServicioTecnico)
+          return;
         }
 
-        const listTickets = lastTicket.data
-          .map(
-            (i) =>
-              `ID_REF:${i.id}, cliente:${user[0].username}, model:${i.attributes.model}, description: ${i.attributes.description}, status:${i.attributes.status}`
-          )
-          .join("\n");
+        await fallBack("Consultando en la base de datos... ⏳");
 
-        const data = await getPrompt();
+        const reparacion = await getReparacion(idRef);
+        if (!reparacion) {
+          await fallBack(
+            "No se encontró el ID de reparación. Por favor, intente nuevamente. ❌"
+          );
+        } else {
+          const nombreProducto = reparacion.data.attributes.nombreProducto;
+          const estado = reparacion.data.attributes.estado;
+          const descripcionReparacion =
+            reparacion.data.attributes.descripcionReparacion;
+          const nombreCliente = reparacion.data.attributes.nombreCliente;
 
-        await chatgptClass.handleMsgChatGPT(data);//Dicinedole actua!!
-
-
-        const textFromAI = await chatgptClass.handleMsgChatGPT(
-          `cliente=${user[0].username}, lista_de_reparaciones="${listTickets}"`
-        );
-
-
-        await flowDynamic(textFromAI.text);
-      })
-      .addAnswer(
-        `¿Necesitas más información o tienes alguna pregunta sobre el contacto y la ubicación? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
-        { capture: true },
-        async (ctx, { fallBack }) => {
-          // ctx.body = es lo que la peronsa escribe!!
-          
-          if(!ctx.body.toLowerCase().includes('servicio tecnico')){
-              const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
-              await fallBack(textFromAI.text);
+          let estadoMensaje = estado;
+          if (estado === "reparado") {
+            estadoMensaje = `${estado} ✅`;
+          } else if (estado === "en reparacion") {
+            estadoMensaje = `${estado} ⏳`;
+          } else if (estado === "no reparado") {
+            estadoMensaje = `${estado} ❌`;
           }
+
+          const mensaje = `Información de la reparación:
+              Nombre Producto: ${nombreProducto}
+              Estado: ${estadoMensaje}
+              Descripción de la Reparación: ${descripcionReparacion}
+              Nombre del Cliente: ${nombreCliente}`;
+
+          await flowDynamic(mensaje);
+          await delay(3000);
+          await fallBack(
+            "Si necesitas mas detalles puedes comunicarte con el servicio tecnico. Si deseas volver al menú servicio tecnico ingresa: servicio tecnico"
+          );
         }
-      );
+      }
+    );
   },
 };
+

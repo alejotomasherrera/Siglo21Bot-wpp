@@ -9,13 +9,13 @@ const { join } = require("path");
  */
 
 const getPrompt = async () => {
-  const pathPromp = join(process.cwd(), "promps");
+  const pathPromp = join(process.cwd(), "/flows/ventaWeb/promps");
   const text = readFileSync(join(pathPromp, "02_FORMASDEENTREGA.txt"), "utf-8");
   return text;
 };
 
 module.exports = {
-  flowFormasDeEntrega: (chatgptClass) => {
+  formasdeEntrega: (chatgptClass) => {
     return addKeyword("envios", {
       onlyContainsKeyword: true
     })
@@ -31,10 +31,10 @@ module.exports = {
           "Si tu pedido es más grande, lo enviaremos con servicios de transporte como Via Cargo o Cruz del Sur. ¡La seguridad es nuestra prioridad!\n\n"
       )
       .addAnswer(
-        "¿Necesitas más información o tienes alguna pregunta sobre las formas de entrega? Si deseas volver al menú de venta web, ingresa: 'volver'",
+        "¿Necesitas más información o tienes alguna pregunta sobre las formas de entrega? Si deseas volver al menú de venta web, ingresa: 'venta web'",
         { capture: true },
         async (ctx, { fallBack }) => {
-          if (!ctx.body.toLowerCase().includes("volver")) {
+          if (!ctx.body.toLowerCase().includes("venta web","volver")) {
             //send prompt to gpt
             const data = await getPrompt();
             await chatgptClass.handleMsgChatGPT(data); //Dicinedole actua!!

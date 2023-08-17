@@ -2,19 +2,19 @@ const { addKeyword } = require("@bot-whatsapp/bot");
 
 const principalWeb = addKeyword(["venta web"])
   .addAnswer(
-    "Estas en el chat de atención al cliente de la web de la empresa. 🏢\n\n"
+    "Estas en el chat de atención al cliente de la web de la empresa. 🏢"
   )
   .addAnswer([
-    "¿Cómo podemos ayudarte?",
+    "¿Cómo podemos ayudarte? Ingrese el texto que se encuentra entre comillas",
     "",
-    "Ayuda con productos 🛒: 'producto'",
+    "Productos 🛒: 'producto'",
     "Metodos de envio y entrega 🚚: 'envios'",
     "Medios de pago 💳:'pagos'",
-    "Asesoramiento 🤝: 'asesoramiento'",
     "Contacto y ubicación 📞🗺️: 'contacto'",
     "Contactar agente 📞👤: 'agente web'",
     "Finalizar chat 📝👋",
+    "Si deseas volver al menu de areas ingresa: volver"
   ])
-  .addAnswer("¡Indica el número de opción! ⌨️");
+  .addAnswer("¡Indica la opcion con su palabra! ⌨️");
 
 module.exports = principalWeb;

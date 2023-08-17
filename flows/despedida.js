@@ -1,6 +1,6 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowDespedida = addKeyword(["chau", "gracias"], {
+const flowDespedida = addKeyword(["chau", "gracias","finalizar chat","adios","hasta luego"], {
   sensitive: true,
   onlyContainsKeyword: true,
   })
@@ -16,6 +16,7 @@ const flowDespedida = addKeyword(["chau", "gracias"], {
         if (ctx.body !== 0) {
           descripcion = ctx.body;
           await fallBack("Gracias por tu calificacion. ¡Que tengas un excelente día!")
+          return endFlow();
         }
 
       } else {

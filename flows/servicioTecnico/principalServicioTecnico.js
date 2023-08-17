@@ -1,6 +1,6 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const principalWeb = addKeyword([
+const prinicipalServicioTecnico = addKeyword([
   "servicio tecnico"
 ])
   .addAnswer("Estás en el chat de servicio técnico")
@@ -17,4 +17,4 @@ const principalWeb = addKeyword([
   ])
   .addAnswer("¡Indica el número de opción! ⌨️");
 
-module.exports = principalWeb;
+module.exports = prinicipalServicioTecnico;

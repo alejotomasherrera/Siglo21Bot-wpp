@@ -1,8 +1,8 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
-const { getUser, getTicket } = require("../../users.service");
+const { getUser, getTicket } = require("../../api/reparacion.service");
 const { readFileSync } = require("fs");
 const { join } = require("path");
-const delay = (ms) => new Promise((res =>  setTimeout(res, ms)))
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 /**
  * Recuperamos el prompt "TECNICO"
@@ -19,23 +19,22 @@ const getPrompt = async () => {
  * @returns
  */
 module.exports = {
-  flowReparacion: (chatgptClass) => {
+  estadoCuenta: (chatgptClass) => {
     return addKeyword("estado cuenta", {
       sensitive: true,
     })
       .addAction(async (ctx, { endFlow, flowDynamic, provider }) => {
         await flowDynamic("Consultando en la base de datos...");
 
-        const jid = ctx.key.remoteJid
-        const refProvider = await provider.getInstance()
+        const jid = ctx.key.remoteJid;
+        const refProvider = await provider.getInstance();
 
-        await refProvider.presenceSubscribe(jid)
-        await delay(500)
+        await refProvider.presenceSubscribe(jid);
+        await delay(500);
 
-        await refProvider.sendPresenceUpdate('composing', jid)
+        await refProvider.sendPresenceUpdate("composing", jid);
 
-
-        const user = await getUser(ctx.from);//Consultamos a strapi! ctx.from = numero
+        const user = await getUser(ctx.from); //Consultamos a strapi! ctx.from = numero
 
         const lastTicket = await getTicket(user[0].id);
 
@@ -53,13 +52,11 @@ module.exports = {
 
         const data = await getPrompt();
 
-        await chatgptClass.handleMsgChatGPT(data);//Dicinedole actua!!
-
+        await chatgptClass.handleMsgChatGPT(data); //Dicinedole actua!!
 
         const textFromAI = await chatgptClass.handleMsgChatGPT(
           `cliente=${user[0].username}, lista_de_reparaciones="${listTickets}"`
         );
-
 
         await flowDynamic(textFromAI.text);
       })
@@ -68,10 +65,10 @@ module.exports = {
         { capture: true },
         async (ctx, { fallBack }) => {
           // ctx.body = es lo que la peronsa escribe!!
-          
-          if(!ctx.body.toLowerCase().includes('cuentas')){
-              const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
-              await fallBack(textFromAI.text);
+
+          if (!ctx.body.toLowerCase().includes("cuentas", "volver")) {
+            const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
+            await fallBack(textFromAI.text);
           }
         }
       );

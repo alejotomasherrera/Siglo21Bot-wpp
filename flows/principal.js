@@ -2,18 +2,18 @@ const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
 const principalWeb = addKeyword([EVENTS.WELCOME])
   .addAnswer(
-    "¡Hola! 👋 Somos *Siglo 21 Máquinas y Herramientas*🛠️🌱",
-    "Expertos en productos de fuerza, jardinería, construcción y más. Mi nombre es Don Carlos ¿En qué puedo ayudarte? 🛒🚚💳"
+    "¡Hola! 👋 Soy Don Carlos, el asistente de *Siglo 21 Máquinas y Herramientas* 🛠️🌱",
+    "Expertos en productos de fuerza, máquinas, herramientas, construcción y más. 🛒🚚💳"
   )
   .addAnswer([
-    "Dirigete al sector que solicites en las siguientes opciones:",
+    "Dirígete al sector que solicites en las siguientes opciones:",
     "",
-    "Servicio de alquiler: 'alquileres'",
-    "Servicio técnico: 'servicio tecnico'",
-    "cuentas corrientes: 'cuentas'",
-    "venta web: 'venta web'",
+    "Servicio de alquiler: 'alquileres' 🛠️🏗️",
+    "Servicio técnico: 'servicio tecnico' 🔧👨‍🔧",
+    "Cuentas corrientes: 'cuentas' 💰💼",
+    "Venta web: 'venta web' 🛒💻",
     "Finalizar chat 📝👋",
   ])
-  .addAnswer("¡Indica el número de opción! ⌨️");
+  .addAnswer("¡Indica la opcion con su palabra! ⌨️");
 
 module.exports = principalWeb;

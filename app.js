@@ -12,14 +12,14 @@ const chatGPT = new ChatGPTClass();
 
 // Generar promp al inicio del chat
 
-
 /**
  * Flows
  */
 
 const principal = require("./flows/principal");
 const volverPrincipal = require("./flows/volverPrincipal");
-const despedida = require("./flows/despedida")
+const despedida = require("./flows/despedida");
+//venta web
 const agenteVentaWeb = require("./flows/ventaWeb/agenteVentaWeb");
 const { productos } = require("./flows/ventaWeb/productos");
 const { contactoUbicacion } = require("./flows/ventaWeb/contactoUbicacion");
@@ -29,15 +29,19 @@ const principalVentaWeb = require("./flows/ventaWeb/principalVentaWeb");
 
 //servicioTecnico
 const principalServicioTecnico = require("./flows/servicioTecnico/principalServicioTecnico");
-const { informacionServicioTecnico } = require("./flows/servicioTecnico/informacionServicioTecnico");
-const { reparacion } = require("./flows/servicioTecnico/contactoServicioTecnico");
+const {
+  informacionServicioTecnico,
+} = require("./flows/servicioTecnico/informacionServicioTecnico");
+const { reparacion } = require("./flows/servicioTecnico/reparacion");
 const agenteServicioTecnico = require("./flows/servicioTecnico/agenteServicioTecnico");
-const { garantia } = require("./flows/servicioTecnico/garantia");
+const { garantias } = require("./flows/servicioTecnico/garantias");
 
 //Contable
 const agenteContable = require("./flows/contable/agenteContable");
 const { estadoCuenta } = require("./flows/contable/estadoCuenta");
-const solicitudCuentaCorriente = require("./flows/contable/solicitudCuentaCorriente");
+const {
+  solicitudCuentaCorriente,
+} = require("./flows/contable/solicitudCuentaCorriente");
 const principalContable = require("./flows/contable/principalContable");
 
 /**
@@ -62,14 +66,12 @@ const main = async () => {
     informacionServicioTecnico(chatGPT),
     reparacion(chatGPT),
     agenteServicioTecnico,
-    garantia(chatGPT),
+    garantias(chatGPT),
     //Contable
     agenteContable,
     estadoCuenta(chatGPT),
-    solicitudCuentaCorriente,
+    solicitudCuentaCorriente(chatGPT),
     principalContable,
-    //Garantias
-    
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);

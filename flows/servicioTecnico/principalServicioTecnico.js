@@ -15,6 +15,6 @@ const prinicipalServicioTecnico = addKeyword([
     "Finalizar chat 📝👋 solamente saluda!",
     "Si desea volver al menu de areas ingrese: volver"
   ])
-  .addAnswer("¡Indica el número de opción! ⌨️");
+  .addAnswer("¡Indica la palabra con su opcion! ⌨️");
 
 module.exports = prinicipalServicioTecnico;

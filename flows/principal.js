@@ -8,11 +8,11 @@ const principalWeb = addKeyword([EVENTS.WELCOME])
   .addAnswer([
     "Dirígete al sector que solicites en las siguientes opciones:",
     "",
-    "Servicio de alquiler: 'alquileres' 🛠️🏗️",
-    "Servicio técnico: 'servicio tecnico' 🔧👨‍🔧",
-    "Cuentas corrientes: 'cuentas' 💰💼",
-    "Venta web: 'venta web' 🛒💻",
-    "Finalizar chat 📝👋",
+    "*Servicio de alquiler*: 'alquileres' 🛠️🏗️",
+    "*Servicio técnico*: 'servicio tecnico' 🔧👨‍🔧",
+    "*Cuentas corrientes*: 'cuentas' 💰💼",
+    "*Venta web*: 'venta web' 🛒💻",
+    "*Finalizar chat* 📝👋 solo di gracias!",
   ])
   .addAnswer("¡Indica la opcion con su palabra! ⌨️");
 

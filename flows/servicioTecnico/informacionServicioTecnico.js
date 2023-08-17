@@ -24,7 +24,7 @@ module.exports = {
       )
 
       .addAnswer(
-        `¿Necesitas más información o tienes alguna pregunta sobre el contacto y la ubicación? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
+        `¿Necesitas más información o tienes alguna pregunta sobre el servicio tecnico? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
         { capture: true },
         async (ctx, { fallBack }) => {
           if (!ctx.body.toLowerCase().includes("servicio tecnico", "volver")) {

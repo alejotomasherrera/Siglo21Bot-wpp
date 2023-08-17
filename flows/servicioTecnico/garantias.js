@@ -23,7 +23,7 @@ module.exports = {
         "📢 Garantías: Todos los productos tienen 6 meses de garantía en el local directamente. Debes traerlo o enviarlo según sea el caso. 🛍️"
       )
       .addAnswer(
-        `¿Necesitas más información o tienes alguna pregunta sobre el contacto y la ubicación? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
+        `¿Necesitas más información o tienes alguna pregunta sobre garantias? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
         { capture: true },
         async (ctx, { fallBack }) => {
           if (!ctx.body.toLowerCase().includes("servicio tecnico", "volver")) {

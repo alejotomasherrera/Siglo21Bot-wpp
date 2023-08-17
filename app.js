@@ -22,10 +22,11 @@ const despedida = require("./flows/despedida");
 //venta web
 const agenteVentaWeb = require("./flows/ventaWeb/agenteVentaWeb");
 const { productos } = require("./flows/ventaWeb/productos");
-const { contactoUbicacion } = require("./flows/ventaWeb/contactoUbicacion");
+const { contacto } = require("./flows/ventaWeb/contacto");
 const { formasdeEntrega } = require("./flows/ventaWeb/formasdeEntrega");
 const { mediosDePago } = require("./flows/ventaWeb/mediosDePago");
 const principalVentaWeb = require("./flows/ventaWeb/principalVentaWeb");
+const { ubicacion } = require("./flows/ventaWeb/ubicacion");
 
 //servicioTecnico
 const principalServicioTecnico = require("./flows/servicioTecnico/principalServicioTecnico");
@@ -42,7 +43,7 @@ const { estadoCuenta } = require("./flows/contable/estadoCuenta");
 const {
   solicitudCuentaCorriente,
 } = require("./flows/contable/solicitudCuentaCorriente");
-const principalContable = require("./flows/contable/principalContable");
+const principalCuentas = require("./flows/contable/principalCuentas");
 
 /**
  * Funcion principal
@@ -57,10 +58,11 @@ const main = async () => {
     //Venta Web
     agenteVentaWeb,
     productos(chatGPT),
-    contactoUbicacion(chatGPT),
+    contacto(chatGPT),
     formasdeEntrega(chatGPT),
     mediosDePago(chatGPT),
     principalVentaWeb,
+    ubicacion(chatGPT),
     //ServicioTecnico
     principalServicioTecnico,
     informacionServicioTecnico(chatGPT),
@@ -71,7 +73,7 @@ const main = async () => {
     agenteContable,
     estadoCuenta(chatGPT),
     solicitudCuentaCorriente(chatGPT),
-    principalContable,
+    principalCuentas,
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);

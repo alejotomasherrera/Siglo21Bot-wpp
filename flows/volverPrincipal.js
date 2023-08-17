@@ -1,16 +1,15 @@
 const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
-const flowPrincipal = addKeyword(["menu", "Menu", "MENU", "Menú", "menú", "MENÚ"])
+const flowPrincipal = addKeyword(["volver","Volver","VOLVER"])
   .addAnswer([
     "Dirigete al sector que solicites en las siguientes opciones:",
     "",
-    "Servicio de alquiler: 'alquileres'",
-    "Servicio técnico: 'servicio'",
-    "cuentas corrientes: 'cuentas'",
-    "venta web: 'venta web'",
-    "Contactar agente 📞👤: 'agente'",
-    "Finalizar chat 📝👋",
+    "*Servicio de alquiler*: 'alquileres' 🛠️🏗️",
+    "*Servicio técnico*: 'servicio tecnico' 🔧👨‍🔧",
+    "*Cuentas corrientes*: 'cuentas' 💰💼",
+    "*Venta web*: 'venta web' 🛒💻",
+    "*Finalizar chat* 📝👋 solo di gracias!",
   ])
-  .addAnswer("¡Indica el número de opción! ⌨️");
+  .addAnswer("¡Indica la opcion con su palabra! ⌨️");
 
 module.exports = flowPrincipal;

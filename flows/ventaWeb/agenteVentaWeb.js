@@ -1,8 +1,8 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowAgente = addKeyword(["agente web","6"]) // Cambiamos "AGENTE" por "AGENTE, 9"
+const flowAgente = addKeyword(["agente web"]) // Cambiamos "AGENTE" por "AGENTE, 9"
   .addAnswer(
-   "Estamos desviando tu conversación a nuestro agente"
+   "Estamos desviando tu conversación a nuestro agente de venta web"
   )
   .addAnswer("Ingrese su dni para poder identificarlo", { capture: true })
   // Guardar en variable el dni

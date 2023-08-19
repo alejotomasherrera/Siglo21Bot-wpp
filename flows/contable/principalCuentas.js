@@ -13,6 +13,6 @@ const principalWeb = addKeyword([
     "Finalizar chat 📝👋 solamente saluda!",
     "Si desea volver al menu de areas ingrese: volver"
   ])
-  .addAnswer("¡Indica la opcion con su palabra! ⌨️");
+  .addAnswer("¡Indica la opcion con la palabra que esta entre comillas! ⌨️");
 
 module.exports = principalWeb;

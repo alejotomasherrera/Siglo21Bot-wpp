@@ -16,7 +16,7 @@ module.exports = {
     return addKeyword("estado reparacion", {
       sensitive: true,
     }).addAnswer(
-      "Ingrese el número de reparación que desea consultar(Si desea salir ingrese 'servicio tecnico'): ",
+      "Ingrese el numero de orden de servicio (Si desea salir ingrese 'servicio tecnico'): ",
       { capture: true },
       async (ctx, { endFlow, flowDynamic, fallBack }) => {
         idRef = ctx.body;
@@ -31,7 +31,7 @@ module.exports = {
         const reparacion = await getReparacion(idRef);
         if (!reparacion) {
           await fallBack(
-            "No se encontró el ID de reparación. Por favor, intente nuevamente. ❌"
+            "No se encontró el numero de orden de servicio. Por favor, intente nuevamente. ❌"
           );
         } else {
           const nombreProducto = reparacion.data.attributes.nombreProducto;

@@ -2,15 +2,15 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB09152FD3A3C62111C2E',
+    id: '3EB0F288C019EADA2F4B7B',
     participant: undefined
   },
-  messageTimestamp: 1692249152,
+  messageTimestamp: 1692368657,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'hola',
+      text: 'jelou',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -19,377 +19,17 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'hola',
+  body: 'jelou',
   from: '5492995164700'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0F5A57EA31503DF3D58',
+    id: '3EB091265AD53FEBD54A83',
     participant: undefined
   },
-  messageTimestamp: 1692249157,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0727C8563CDC5156E81',
-    participant: undefined
-  },
-  messageTimestamp: 1692249162,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'producto',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'producto',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB05922E10A59D56019B4',
-    participant: undefined
-  },
-  messageTimestamp: 1692249164,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'calefactor',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'calefactor',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB06064C646722874237C',
-    participant: undefined
-  },
-  messageTimestamp: 1692249174,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C29B58F2D10731A45C',
-    participant: undefined
-  },
-  messageTimestamp: 1692249193,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'envios',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'envios',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0ECB5F780C191F2259C',
-    participant: undefined
-  },
-  messageTimestamp: 1692249196,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB05D03071BC35471FACA',
-    participant: undefined
-  },
-  messageTimestamp: 1692249201,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'pagos',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'pagos',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0F8DF4F3628C043864F',
-    participant: undefined
-  },
-  messageTimestamp: 1692249209,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0E09E235E9574100AF9',
-    participant: undefined
-  },
-  messageTimestamp: 1692249224,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'contacto',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'contacto',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB09DA445FCA9A9B6AAA3',
-    participant: undefined
-  },
-  messageTimestamp: 1692249230,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'ubicacion',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'ubicacion',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A70B5BF788F256FE9E',
-    participant: undefined
-  },
-  messageTimestamp: 1692249237,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB050E447765A411F991A',
-    participant: undefined
-  },
-  messageTimestamp: 1692249245,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'ubicacion',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'ubicacion',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB076D4711308661BCBA7',
-    participant: undefined
-  },
-  messageTimestamp: 1692249273,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'donde queda la sucursal de neuquen?',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'donde queda la sucursal de neuquen?',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0FDBFE05BACF7EAC59F',
-    participant: undefined
-  },
-  messageTimestamp: 1692249321,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'venta web',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'venta web',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB00169D06764CE9F01C1',
-    participant: undefined
-  },
-  messageTimestamp: 1692249379,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'volver',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'volver',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0F9704836BC5CECF328',
-    participant: undefined
-  },
-  messageTimestamp: 1692249384,
+  messageTimestamp: 1692368701,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -410,10 +50,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB020E52EF39FF8C053AA',
+    id: '3EB0E9746CFCD03E61502B',
     participant: undefined
   },
-  messageTimestamp: 1692249388,
+  messageTimestamp: 1692368730,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -434,58 +74,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB03FF58F8351D7D9F071',
+    id: '3EB082E97BA743317CA281',
     participant: undefined
   },
-  messageTimestamp: 1692249390,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '1',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '1',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB063D9624D81761B9F05',
-    participant: undefined
-  },
-  messageTimestamp: 1692249399,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0FF19BA16AF530F8BDF',
-    participant: undefined
-  },
-  messageTimestamp: 1692249406,
+  messageTimestamp: 1692368763,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -506,34 +98,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB06AFD0DBD2B7C3DBF0B',
+    id: '3EB04C32B1695B3DBFA8B6',
     participant: undefined
   },
-  messageTimestamp: 1692249411,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '4',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '4',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB089E2F0B6CA41596729',
-    participant: undefined
-  },
-  messageTimestamp: 1692249424,
+  messageTimestamp: 1692369230,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -554,106 +122,10 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0B421F687327C0057FF',
+    id: '3EB0265125ED259CB8AF71',
     participant: undefined
   },
-  messageTimestamp: 1692249432,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'info',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'info',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C7387335D499CD74DE',
-    participant: undefined
-  },
-  messageTimestamp: 1692249471,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'servicio tecnico',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'servicio tecnico',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0736A67072A097C5EA3',
-    participant: undefined
-  },
-  messageTimestamp: 1692249475,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'garantia',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'garantia',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB03A71CF380DF55E7654',
-    participant: undefined
-  },
-  messageTimestamp: 1692249528,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'servicio tecnico',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'servicio tecnico',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0CE58B8031D05C36DA4',
-    participant: undefined
-  },
-  messageTimestamp: 1692249531,
+  messageTimestamp: 1692369294,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
@@ -674,15 +146,15 @@
   key: {
     remoteJid: '5492995164700@s.whatsapp.net',
     fromMe: false,
-    id: '3EB014C8B4F0429280EA4D',
+    id: '3EB08E7817C3B46620849E',
     participant: undefined
   },
-  messageTimestamp: 1692249551,
+  messageTimestamp: 1692369307,
   pushName: 'Alejo Herrera',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'cuentas',
+      text: 'venta web',
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
     },
@@ -691,102 +163,6 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'cuentas',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB03A0C01DECB4C9516B3',
-    participant: undefined
-  },
-  messageTimestamp: 1692249555,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'estado',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'estado',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB050025D3E386265BE6F',
-    participant: undefined
-  },
-  messageTimestamp: 1692249573,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '34567890',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '34567890',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0A5E3E2FB1553EC3223',
-    participant: undefined
-  },
-  messageTimestamp: 1692249609,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '87654321',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '87654321',
-  from: '5492995164700'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5492995164700@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0EA1A7ADE7F208F7FF3',
-    participant: undefined
-  },
-  messageTimestamp: 1692249619,
-  pushName: 'Alejo Herrera',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'cuentas',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'cuentas',
+  body: 'venta web',
   from: '5492995164700'
 }

@@ -36,6 +36,7 @@ const {
 const { reparacion } = require("./flows/servicioTecnico/reparacion");
 const agenteServicioTecnico = require("./flows/servicioTecnico/agenteServicioTecnico");
 const { garantias } = require("./flows/servicioTecnico/garantias");
+const { solicitarServicioTecnico } = require("./flows/servicioTecnico/solicitarServicioTecnico");
 
 //Contable
 const agenteContable = require("./flows/contable/agenteContable");
@@ -69,6 +70,7 @@ const main = async () => {
     reparacion(chatGPT),
     agenteServicioTecnico,
     garantias(chatGPT),
+    solicitarServicioTecnico(chatGPT),
     //Contable
     agenteContable,
     estadoCuenta(chatGPT),

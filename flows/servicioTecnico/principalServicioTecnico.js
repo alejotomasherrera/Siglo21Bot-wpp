@@ -8,13 +8,13 @@ const prinicipalServicioTecnico = addKeyword([
     "¿Cómo podemos ayudarte? 🛠️",
     "",
     "Estado de tu reparación: 'estado reparacion' 🛠️",
-    "Información sobre servicio técnico: 'info' ℹ️",
+    "¿Quieres arreglar tu maquina?: 'info' ℹ️",
     "Información sobre garantía: 'garantia' 📜",
     "Solicitar un servicio técnico: 'solicitar' 📞",
     "Contactar agente 📞👤: 'agente tecnico' 👥",
     "Finalizar chat 📝👋 solamente saluda!",
     "Si desea volver al menu de areas ingrese: volver"
   ])
-  .addAnswer("¡Indica la palabra con su opcion! ⌨️");
+  .addAnswer("¡Indica la opcion con la palabra que esta entre comillas! ⌨️");
 
 module.exports = prinicipalServicioTecnico;

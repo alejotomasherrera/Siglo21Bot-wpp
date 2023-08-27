@@ -14,7 +14,7 @@
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bot-whatsapp/bot": "0.1.28",
         "@bot-whatsapp/cli": "^0.1.28",
-        "@bot-whatsapp/database": "^0.1.28",
+        "@bot-whatsapp/database": "^0.1.30",
         "@bot-whatsapp/portal": "^0.1.28",
         "@bot-whatsapp/provider": "^0.1.28",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",

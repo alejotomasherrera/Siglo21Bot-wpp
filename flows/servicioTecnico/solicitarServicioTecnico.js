@@ -1,6 +1,7 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 const { readFileSync } = require("fs");
 const { join } = require("path");
+
 /**
  * Exportamos
  * @param {*} chatgptClass

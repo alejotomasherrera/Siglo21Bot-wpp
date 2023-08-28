@@ -29,6 +29,7 @@ module.exports = {
         await fallBack("Consultando en la base de datos... ⏳");
 
         const reparacion = await getReparacion(idRef);
+
         if (!reparacion) {
           await fallBack(
             "No se encontró el numero de orden de servicio. Por favor, intente nuevamente. ❌"
@@ -58,7 +59,7 @@ module.exports = {
           await flowDynamic(mensaje);
           await delay(3000);
           await fallBack(
-            "Si necesitas mas detalles puedes comunicarte con el servicio tecnico. Si deseas volver al menú servicio tecnico ingresa: servicio tecnico"
+            "¿Desea realizar otra consulta de estado de tu reparacion? (Si desea salir ingrese 'servicio tecnico')"
           );
         }
       }

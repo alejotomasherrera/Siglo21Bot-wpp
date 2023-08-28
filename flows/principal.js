@@ -9,7 +9,7 @@ const principalWeb = addKeyword([EVENTS.WELCOME])
     "Dirígete al sector que solicites en las siguientes opciones:",
     "",
     "*Servicio de alquiler*: 'alquileres' 🛠️🏗️",
-    "*Servicio técnico*: 'servicio tecnico' 🔧👨‍🔧",
+    "*Servicio técnico/Garantias*: 'servicio tecnico' 🔧👨‍🔧",
     "*Cuentas corrientes*: 'cuentas' 💰💼",
     "*Venta web*: 'venta web' 🛒💻",
     "*Finalizar chat* 📝👋 solo di gracias!",

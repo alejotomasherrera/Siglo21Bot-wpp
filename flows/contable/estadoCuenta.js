@@ -31,11 +31,13 @@ module.exports = {
 
         if (dniCliente.toLowerCase() === "cuentas") {
           await flowDynamic(principalCuentas);
+          return;
         }
 
         await fallBack("Consultando en la base de datos... ⏳");
 
         const cuenta = await getCuenta(dniCliente);
+
         if (!cuenta) {
           await fallBack(
             "No se encontró la cuenta corriente Por favor, intente nuevamente. ❌"

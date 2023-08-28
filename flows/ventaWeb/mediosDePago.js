@@ -1,6 +1,7 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 const { readFileSync } = require("fs");
 const { join } = require("path");
+const principalWeb = require("./principalVentaWeb");
 
 /**
  * Exportamos
@@ -25,13 +26,14 @@ module.exports = {
       .addAnswer(
         `Necesitas más información o tienes alguna pregunta sobre los medios de pago? Si deseas volver al menu de venta web ingresa: venta web`,
         { capture: true },
-        async (ctx, { fallBack }) => {
+        async (ctx, { fallBack, flowDynamic }) => {
           if (!ctx.body.toLowerCase().includes("venta web","volver")) {
             //send prompt to gpt
             const data = await getPrompt();
             await chatgptClass.handleMsgChatGPT(data); //Dicinedole actua!!
             const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);
             await fallBack(textFromAI.text);
+            await fallBack("Si deseas volver al menu de venta web ingresa: venta web")
           }
         }
       );

@@ -16,7 +16,8 @@ const getPrompt = async () => {
 
 module.exports = {
   formasdeEntrega: (chatgptClass) => {
-    return addKeyword("envios", {
+    return addKeyword(["envios","Envios","ENVIO","envio"], {
+      sensitive: true,
       onlyContainsKeyword: true
     })
       .addAnswer(

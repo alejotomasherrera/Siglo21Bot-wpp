@@ -1,10 +1,10 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
 const principalWeb = addKeyword([
-  "cuentas"
+  "cuentas","Cuentas","CUENTAS"
 ])
-  .addAnswer("Estás en el chat de cuentas")
   .addAnswer([
+    "Estás en el chat de cuentas",
     "¿Cómo podemos ayudarte? 🛠️",
     "",
     "*Estado de mi cuenta corriente*: 'estado' 💰",

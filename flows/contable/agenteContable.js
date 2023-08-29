@@ -1,8 +1,7 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowAgente = addKeyword(["Agente Contable"], { sensitive: true })
+const flowAgente = addKeyword(["Agente Contable","agente contable"], { sensitive: true })
   .addAnswer("Estamos desviando tu conversación a nuestro agente contable.")
-
   .addAction(async (ctx, { provider }) => {
     const nanoid = await import("nanoid");
     const ID_GROUP = nanoid.nanoid(5);

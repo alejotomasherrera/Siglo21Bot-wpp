@@ -17,11 +17,14 @@ const getPrompt = async () => {
 };
 
 module.exports = {
-    ubicacion: (chatgptClass) => {
-    return addKeyword("ubicacion", {
-      sensitive: true,
-      onlyContainsKeyword: true,
-    })
+  ubicacion: (chatgptClass) => {
+    return addKeyword(
+      ["ubicacion", "Ubicacion", "ubicaciones", "Ubicaciones"],
+      {
+        sensitive: true,
+        onlyContainsKeyword: true,
+      }
+    )
       .addAnswer(
         "🏢 **Sucursales**\n\n" +
           "📍 Neuquén:\n" +

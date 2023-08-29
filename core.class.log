@@ -1,0 +1,320 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995164700@s.whatsapp.net',
+    fromMe: false,
+    id: 'E0062A387C45C6EB33E80C53BA8D0B55',
+    participant: undefined
+  },
+  messageTimestamp: 1693317893,
+  pushName: 'Alejo Herrera',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5492995164700'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB09B3D8D67E409C5DBC7',
+    participant: undefined
+  },
+  messageTimestamp: 1693318161,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB07C7A8ADBAA4566F0BD',
+    participant: undefined
+  },
+  messageTimestamp: 1693318175,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: 'servicio tecnico',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'servicio tecnico',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB038C11B06597BB2DDA9',
+    participant: undefined
+  },
+  messageTimestamp: 1693318219,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: 'Estado de reparacion',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Estado de reparacion',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB05F08CF311ED67E570D',
+    participant: undefined
+  },
+  messageTimestamp: 1693318238,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: 'estado de reparacion',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'estado de reparacion',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0426BDC665C5A3F0BF3',
+    participant: undefined
+  },
+  messageTimestamp: 1693318287,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: '12345678',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '12345678',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995343513@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0F6849D55DF60E35244',
+    participant: undefined
+  },
+  messageTimestamp: 1693318327,
+  pushName: 'Guido Frati',
+  broadcast: false,
+  message: Message {
+    conversation: 'si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'si',
+  from: '5492995343513'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492994219594@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0A8FFE7802AFB977C0F',
+    participant: undefined
+  },
+  messageTimestamp: 1693318633,
+  pushName: 'Juan Cruz Sepulveda',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5492994219594'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492994219594@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06B38AA89C566C78536',
+    participant: undefined
+  },
+  messageTimestamp: 1693318720,
+  pushName: 'Juan Cruz Sepulveda',
+  broadcast: false,
+  message: Message {
+    conversation: 'ventas web',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ventas web',
+  from: '5492994219594'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492994219594@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB03AC56C7D37D2BD263C',
+    participant: undefined
+  },
+  messageTimestamp: 1693318730,
+  pushName: 'Juan Cruz Sepulveda',
+  broadcast: false,
+  message: Message {
+    conversation: 'ventas web',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ventas web',
+  from: '5492994219594'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492994219594@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB04EC559DF059B278A2A',
+    participant: undefined
+  },
+  messageTimestamp: 1693318740,
+  pushName: 'Juan Cruz Sepulveda',
+  broadcast: false,
+  message: Message {
+    conversation: 'venta web',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'venta web',
+  from: '5492994219594'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492994219594@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0214F53854F6BC3A532',
+    participant: undefined
+  },
+  messageTimestamp: 1693318800,
+  pushName: 'Juan Cruz Sepulveda',
+  broadcast: false,
+  message: Message {
+    conversation: 'producto',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'producto',
+  from: '5492994219594'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995550362@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0D67ED6DB2A8F5532CA',
+    participant: undefined
+  },
+  messageTimestamp: 1693319546,
+  pushName: 'Manu',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5492995550362'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995550362@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB056FEE1B6ABCDB8FEF0',
+    participant: undefined
+  },
+  messageTimestamp: 1693319560,
+  pushName: 'Manu',
+  broadcast: false,
+  message: Message {
+    conversation: 'servicio tecnico',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'servicio tecnico',
+  from: '5492995550362'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995550362@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0708A90D71C5BDD9D33',
+    participant: undefined
+  },
+  messageTimestamp: 1693319571,
+  pushName: 'Manu',
+  broadcast: false,
+  message: Message {
+    conversation: 'estado reparacion',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'estado reparacion',
+  from: '5492995550362'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5492995550362@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB080572B6E471C1D1850',
+    participant: undefined
+  },
+  messageTimestamp: 1693319577,
+  pushName: 'Manu',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '5492995550362'
+}

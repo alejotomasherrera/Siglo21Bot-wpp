@@ -15,14 +15,13 @@ const getPrompt = async () => {
 
 module.exports = {
   informacionServicioTecnico: (chatgptClass) => {
-    return addKeyword("info", {
+    return addKeyword(["info","Info"], {
       sensitive: true,
       onlyContainsKeyword: true,
     })
       .addAnswer(
         "¡Somos especializados en los productos de Husqvarna! 😊🛠️\n\nContamos con un amplio stock de repuestos y accesorios para tu máquina. 🛒🔧\n\nTambién ofrecemos servicio técnico de Bosch, Lusqtoff, Total Herramientas y Generadores Kohler. 🛠️💼"
       )
-
       .addAnswer(
         `¿Necesitas más información o tienes alguna pregunta sobre el servicio tecnico? Si deseas volver al menú tecnico ingresa: servicio tecnico`,
         { capture: true },

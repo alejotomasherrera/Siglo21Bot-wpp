@@ -18,7 +18,7 @@ const getPrompt = async () => {
 
 module.exports = {
   contacto: (chatgptClass) => {
-    return addKeyword("contacto", {
+    return addKeyword(["contacto","Contacto","CONTACTO"], {
       sensitive: true,
       onlyContainsKeyword: true,
     })

@@ -9,11 +9,13 @@ const principalWeb = addKeyword([EVENTS.WELCOME])
     "Dirígete al sector que solicites en las siguientes opciones:",
     "",
     "*Servicio de alquiler*: 'alquileres' 🛠️🏗️",
-    "*Servicio técnico/Garantias*: 'servicio tecnico' 🔧👨‍🔧",
-    "*Cuentas corrientes*: 'cuentas' 💰💼",
+    "*Servicio técnico/Garantias*: 'servicio tecnico' 🔧",
+    "*Cuentas corrientes*: 'cuentas' 💰",
     "*Venta web*: 'venta web' 🛒💻",
     "*Finalizar chat* 📝👋 solo di gracias!",
+    "",
+    "¡Indica la opcion con su palabra! ⌨️"
+
   ])
-  .addAnswer("¡Indica la opcion con su palabra! ⌨️");
 
 module.exports = principalWeb;

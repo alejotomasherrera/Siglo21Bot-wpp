@@ -21,7 +21,7 @@ const getPrompt = async () => {
 
 module.exports = {
   estadoCuenta: (chatgptClass) => {
-    return addKeyword(["estado"], {
+    return addKeyword(["estado","Estado"], {
       sensitive: true,
     }).addAnswer(
       "Ingrese el DNI correspondiente a la cuenta corriente (Si desea salir ingrese 'cuentas'): ",

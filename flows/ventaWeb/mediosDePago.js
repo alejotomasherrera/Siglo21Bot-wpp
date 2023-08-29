@@ -17,7 +17,7 @@ const getPrompt = async () => {
 
 module.exports = {
   mediosDePago: (chatgptClass) => {
-    return addKeyword("pagos", {
+    return addKeyword(["pagos","Pagos","PAGOS"], {
       onlyContainsKeyword: true,
     })
       .addAnswer(
@@ -27,8 +27,7 @@ module.exports = {
         `Necesitas más información o tienes alguna pregunta sobre los medios de pago? Si deseas volver al menu de venta web ingresa: venta web`,
         { capture: true },
         async (ctx, { fallBack, flowDynamic }) => {
-          if (!ctx.body.toLowerCase().includes("venta web","volver")) {
-            //send prompt to gpt
+          if (!ctx.body.toLowerCase().includes("venta web","volver","Volver","Venta web","VENTA WEB","VOLVER")) {
             const data = await getPrompt();
             await chatgptClass.handleMsgChatGPT(data); //Dicinedole actua!!
             const textFromAI = await chatgptClass.handleMsgChatGPT(ctx.body);

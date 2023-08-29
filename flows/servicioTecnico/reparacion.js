@@ -13,7 +13,7 @@ const prinicipalServicioTecnico = require("./principalServicioTecnico");
 
 module.exports = {
   reparacion: (chatgptClass) => {
-    return addKeyword("estado reparacion", {
+    return addKeyword(["estado reparacion","Estado reparacion"], {
       sensitive: true,
     }).addAnswer(
       "Ingrese el numero de orden de servicio (Si desea salir ingrese 'servicio tecnico'): ",
@@ -21,7 +21,7 @@ module.exports = {
       async (ctx, { endFlow, flowDynamic, fallBack }) => {
         idRef = ctx.body;
         
-        if (idRef.toLowerCase() === "servicio tecnico") {
+        if (idRef.toLowerCase() === "servicio tecnico" || idRef.toLowerCase() === "Servicio tecnico") {
           await flowDynamic(prinicipalServicioTecnico)
           return;
         }
@@ -32,7 +32,8 @@ module.exports = {
 
         if (!reparacion) {
           await fallBack(
-            "No se encontró el numero de orden de servicio. Por favor, intente nuevamente. ❌"
+            "No se encontró el numero de orden de servicio. Por favor, intente nuevamente. ❌",
+            "(Si desea salir ingrese 'servicio tecnico')"
           );
         } else {
           const nombreProducto = reparacion.data.attributes.nombreProducto;

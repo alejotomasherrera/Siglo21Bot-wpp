@@ -1,12 +1,18 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const flowAgente = addKeyword(["agente web"]) // Cambiamos "AGENTE" por "AGENTE, 9"
+const flowAgente = addKeyword(["agente web","Agente web","AGENTE WEB"])
   .addAnswer(
    "Estamos desviando tu conversación a nuestro agente de venta web"
   )
-  .addAnswer("Ingrese su dni para poder identificarlo", { capture: true })
+  .addAnswer("Ingrese su dni para poder identificarlo", 
+  { capture: true },
   // Guardar en variable el dni
-  
+  async (ctx) => {
+    const dni = ctx.event.message.body
+    console.log("Generando grupo venta web con dni: ", dni)
+    return dni
+  }
+  )
   .addAction(async (ctx, { provider }) => {
     const nanoid = await import('nanoid')
     const ID_GROUP = nanoid.nanoid(5)

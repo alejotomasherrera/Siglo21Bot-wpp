@@ -1,10 +1,10 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
 const prinicipalServicioTecnico = addKeyword([
-  "servicio tecnico"
+  "servicio tecnico", "Servicio tecnico"
 ])
-  .addAnswer("Estás en el chat de servicio técnico")
   .addAnswer([
+    "Estás en el chat de servicio técnico",
     "¿Cómo podemos ayudarte? 🛠️",
     "",
     "*Estado de tu reparación*: 'estado reparacion' 🛠️",
@@ -13,7 +13,7 @@ const prinicipalServicioTecnico = addKeyword([
     "*Solicitar un servicio técnico*: 'solicitar' 📞",
     "*Contactar agente* 📞👤: 'agente tecnico' 👥",
     "*Finalizar chat* 📝👋 solamente saluda!",
-    "Si desea volver al menu de areas ingrese: volver"
+    "Si desea volver al menu de areas ingrese: volver",
   ])
   .addAnswer("¡Indica la opcion con la palabra que esta entre comillas! ⌨️");
 

@@ -1,10 +1,8 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
-const principalWeb = addKeyword(["venta web"])
-  .addAnswer(
-    "Estas en el chat de atención al cliente de venta web."
-  )
+const principalWeb = addKeyword(["venta web","Venta web","VENTA WEB"])
   .addAnswer([
+    "Estas en el chat de atención al cliente de venta web.",
     "¿Cómo podemos ayudarte? 🤔",
     "",
     "Productos 🛒: 'producto'",

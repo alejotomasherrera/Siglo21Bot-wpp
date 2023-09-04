@@ -16,7 +16,7 @@
         "@bot-whatsapp/cli": "^0.1.28",
         "@bot-whatsapp/database": "^0.1.30",
         "@bot-whatsapp/portal": "^0.1.28",
-        "@bot-whatsapp/provider": "^0.1.28",
+        "@bot-whatsapp/provider": "^0.1.30",
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "axios": "^1.4.0",
         "bot-ws-plugin-openai": "^1.0.3",

@@ -25,7 +25,7 @@
         "exceljs": "^4.3.0",
         "fluent-ffmpeg": "^2.1.2",
         "mime-types": "^2.1.35",
-        "nanoid": "^4.0.2",
+        "nanoid": "^5.0.9",
         "openai": "^3.2.1",
         "wa-sticker-formatter": "^4.4.4"
     },
